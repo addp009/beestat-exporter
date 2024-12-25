@@ -22,6 +22,7 @@ jobs:
 
       - name: 'Build Inventory Image'
         run: |
+          ls
           docker build . --tag ghcr.io/addp009/beestat-exporter:latest
           docker push ghcr.io/addp009/beestat-exporter:latest
 
